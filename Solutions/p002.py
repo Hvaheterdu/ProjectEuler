@@ -18,11 +18,11 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 def fibonacci(n):
     if n <= 0:
-        print("Incorrect input")
-    # First Fibonacci number is 0
+        print("n has to be bigger than 0")
+    # Fib = 1
     elif n == 1:
         return 0
-    # Second Fibonacci number is 1
+    # Fib = 2
     elif n == 2:
         return 1
     else:
