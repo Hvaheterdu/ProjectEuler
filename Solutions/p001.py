@@ -20,11 +20,11 @@ def multiples():
     Returns:
         [int]: sum of all multiples
     """
-    sum = 0
+    res = 0
     for i in range(1000):
         if i % 3 == 0 or i % 5 == 0:
-            sum += i
-    return sum
+            res += i
+    return res
 
 
 if __name__ == "__main__":
