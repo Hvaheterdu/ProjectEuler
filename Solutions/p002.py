@@ -17,6 +17,14 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 
 def fibonacci(n):
+    """Fibonacci sequence
+
+    Args:
+        n (int): the n'th fibonacci number
+
+    Returns:
+        [int]: the n'th fibonacci number
+    """
     if n <= 0:
         print("n has to be bigger than 0")
     # Fib = 1
