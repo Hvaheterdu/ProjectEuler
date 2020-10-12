@@ -27,8 +27,8 @@ def largest_prime_factor(number):
             factors.append(i)
         else:
             i += 1
-    print(max(factors))
+    return max(factors)
 
 
 if __name__ == "__main__":
-    largest_prime_factor(600851475143)
+    print(largest_prime_factor(600851475143))

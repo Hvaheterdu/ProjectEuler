@@ -32,8 +32,8 @@ def sum_square_difference():
         square_sum += i
     square_sum = square_sum**2
     diff = square_sum - sum_square
-    print(diff)
+    return diff
 
 
 if __name__ == "__main__":
-    sum_square_difference()
+    print(sum_square_difference())
