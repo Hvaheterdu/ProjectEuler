@@ -30,4 +30,5 @@ def largest_prime_factor(number):
     print(max(factors))
 
 
-largest_prime_factor(600851475143)
+if __name__ == "__main__":
+    largest_prime_factor(600851475143)
