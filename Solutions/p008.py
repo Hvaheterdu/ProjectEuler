@@ -40,7 +40,8 @@ NUMBER = "7316717653133062491922511967442657474235534919493496983520312774506326
 
 def largest_product_in_series():
     """Find largest product of 13 adjacent digits.
-    Used Python built-in function to find the adjacent digits.
+    Used Python built-in function to find product of 
+    13 adjacent digits.
 
     Returns:
         int: largest product of 13 adjacent digits
