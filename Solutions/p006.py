@@ -27,7 +27,7 @@ def sum_square_difference():
     and square of sums
 
     Returns:
-        [int]: difference between square sum and sum square
+        int: difference between square sum and sum square
     """
     sum_square = 0
     square_sum = 0

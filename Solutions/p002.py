@@ -23,7 +23,7 @@ def fibonacci(n):
         n (int): the n'th fibonacci number
 
     Returns:
-        [int]: the n'th fibonacci number
+        int: the n'th fibonacci number
     """
     if n <= 0:
         print("n has to be bigger than 0")

@@ -19,7 +19,7 @@ def smallest_multiple():
     numpy GCD and formula from LCM Wikipedia page
 
     Returns:
-        [int]: smallest multiple
+        int: smallest multiple
     """
     total = 1
     for i in range(1, 21, 1):

@@ -18,7 +18,7 @@ def multiples():
     below 1000. 
 
     Returns:
-        [int]: sum of all multiples
+        int: sum of all multiples
     """
     res = 0
     for i in range(1000):

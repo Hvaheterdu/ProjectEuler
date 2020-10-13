@@ -20,7 +20,7 @@ def largest_prime_factor(number):
         number (int): number to find largest factor from
 
     Returns:
-        [int]: lagerst factor
+        int: lagerst factor
     """
     factors = []
     i = 2

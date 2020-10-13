@@ -23,7 +23,7 @@ def find_prime_num(n):
         n (int): nth prime number
 
     Returns:
-        [int]: prime number
+        int: prime number
     """
     start = 2
     count = 0
