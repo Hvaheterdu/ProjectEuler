@@ -3,42 +3,29 @@
 """
 Problem name:
 
-Sum square difference
+Largest palindrome product
 
 Problem description:
 
-The sum of the squares of the first ten natural numbers is,
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
-                                                        1^2 + 2^2 + ... + 10^2 = 385
-
-The square of the sum of the first ten natural numbers is,
-
-                                                        (1 + 2 + ... + 10)^2 = 55^2 = 3025
-
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is
-3025 - 385 = 2640
-
-Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 
-def sum_square_difference():
-    """Find difference between sum of squares 
-    and square of sums
+def palindrome_num():
+    """Find palindrome number from product of two 3-digit numbers
 
     Returns:
-        [int]: difference between square sum and sum square
+        [str]: largest palindrome
     """
-    sum_square = 0
-    square_sum = 0
-    diff = 0
-    for i in range(1, 101, 1):
-        sum_square += i**2
-        square_sum += i
-    square_sum = square_sum**2
-    diff = square_sum - sum_square
-    return diff
+    palindrome = []
+    for i in range(100, 1000):
+        for j in range(100, 1000):
+            if str(i * j) == str(i * j)[:: -1]:
+                palindrome.append(i*j)
+    return max(palindrome)
 
 
 if __name__ == "__main__":
-    print(sum_square_difference())
+    print(palindrome_num())
