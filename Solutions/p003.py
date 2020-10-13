@@ -17,7 +17,10 @@ def largest_prime_factor(number):
     """Find largest prime factor of parameter number
 
     Args:
-        number (int): number to find factor off
+        number (int): number to find largest factor from
+
+    Returns:
+        [int]: lagerst factor
     """
     factors = []
     i = 2

@@ -15,6 +15,12 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 
 def smallest_multiple():
+    """Find smallest multiple of 1 - 20 with 
+    numpy GCD and formula from LCM Wikipedia page
+
+    Returns:
+        [int]: smallest multiple
+    """
     total = 1
     for i in range(1, 21, 1):
         total *= i // np.gcd(i, total)

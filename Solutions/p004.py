@@ -23,7 +23,12 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 
 def sum_square_difference():
-    """ Find difference between sum of squares and square of sums """
+    """Find difference between sum of squares 
+    and square of sums
+
+    Returns:
+        [int]: difference between square sum and sum square
+    """
     sum_square = 0
     square_sum = 0
     diff = 0
