@@ -20,7 +20,8 @@ Find the product abc.
 
 def pythagorean_triplet(n):
     """Find the product of the pythagorean triplet that adds
-    up to 1000
+    up to 1000. See Wikipedia page for Pythagorean Triple
+    for forumla
 
     Args:
         n (int): a + b + c
