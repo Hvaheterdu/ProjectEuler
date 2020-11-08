@@ -92,17 +92,16 @@ def largest_prod_in_grid(n):
             if verti > max_prod:
                 max_prod = verti
 
-    # Diagonal and reverse diagonal
-    for r in range(R - n):
-        for c in range(C - n):
-            diag = GRID[r][c] * GRID[r + 1][c + 1] * \
-                GRID[r + 2][c + 2] * GRID[r + 3][c + 3]
-            diag_rev = GRID[r][c + 3] * GRID[r + 1][c + 2] * \
-                GRID[r + 2][c + 1] * GRID[r + 3][c]
-            if diag > max_prod:
-                max_prod = diag
-            if diag_rev > max_prod:
-                max_prod = diag_rev
+            # Diagonal and reverse diagonal
+            if r <= R - n:
+                diag = GRID[r][c] * GRID[r + 1][c + 1] * \
+                    GRID[r + 2][c + 2] * GRID[r + 3][c + 3]
+                diag_rev = GRID[r][c + 3] * GRID[r + 1][c + 2] * \
+                    GRID[r + 2][c + 1] * GRID[r + 3][c]
+                if diag > max_prod:
+                    max_prod = diag
+                if diag_rev > max_prod:
+                    max_prod = diag_rev
 
     return max_prod
 
