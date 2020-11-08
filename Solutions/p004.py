@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-from operator import mul
 
 """
 Problem name: Largest palindrome product
