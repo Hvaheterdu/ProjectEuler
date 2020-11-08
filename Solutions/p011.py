@@ -94,7 +94,7 @@ def largest_prod_in_grid(n):
                 max_diag = max((GRID[r][c] * GRID[r + 1][c + 1] * GRID[r + 2][c + 2] * GRID[r + 3][c + 3]),
                                (GRID[r][c + 3] * GRID[r + 1][c + 2] * GRID[r + 2][c + 1] * GRID[r + 3][c]))
 
-            max_prod = max(max_dir, max_diag)
+            max_prod = max(max_prod, max_dir, max_diag)
 
     return max_prod
 
