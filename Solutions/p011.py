@@ -74,7 +74,7 @@ def largest_prod_in_grid(n):
     2D matrix
 
     Args:
-        n (int): elements to include
+        n (int): path length
 
     Returns:
         int: product of n adjacent elements
