@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import numpy as np
+from math import gcd
 
 """
 Problem name:
@@ -23,7 +23,7 @@ def smallest_multiple():
     """
     total = 1
     for i in range(1, 21, 1):
-        total *= i // np.gcd(i, total)
+        total *= i // gcd(i, total)
     return total
 
 
