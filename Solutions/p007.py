@@ -2,15 +2,9 @@
 import math
 
 """
-Problem name:
+Problem name: 10001st prime
 
-10001st prime
-
-Problem description:
-
-By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
-
-What is the 10 001st prime number?
+Problem ID:   07
 """
 
 
