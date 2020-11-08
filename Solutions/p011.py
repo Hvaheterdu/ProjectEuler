@@ -79,26 +79,22 @@ def largest_prod_in_grid(n):
     Returns:
         int: product of n adjacent elements
     """
+    max_dir = 0
+    max_diag = 0
     max_prod = 0
 
     # Horizontal and vertical
     for r in range(R):
         for c in range(C - n):
-            hori = GRID[r][c] * GRID[r][c + 1] * \
-                GRID[r][c + 2] * GRID[r][c + 3]
-            verti = GRID[c][r] * GRID[c + 1][r] * \
-                GRID[c + 2][r] * GRID[c + 3][r]
-            if max(hori, verti) > max_prod:
-                max_prod = max(hori, verti)
+            max_dir = max((GRID[r][c] * GRID[r][c + 1] * GRID[r][c + 2] * GRID[r][c + 3]),
+                          (GRID[c][r] * GRID[c + 1][r] * GRID[c + 2][r] * GRID[c + 3][r]))
 
             # Diagonal and reverse diagonal
             if r <= R - n:
-                diag = GRID[r][c] * GRID[r + 1][c + 1] * \
-                    GRID[r + 2][c + 2] * GRID[r + 3][c + 3]
-                diag_rev = GRID[r][c + 3] * GRID[r + 1][c + 2] * \
-                    GRID[r + 2][c + 1] * GRID[r + 3][c]
-                if max(diag, diag_rev) > max_prod:
-                    max_prod = max(diag, diag_rev)
+                max_diag = max((GRID[r][c] * GRID[r + 1][c + 1] * GRID[r + 2][c + 2] * GRID[r + 3][c + 3]),
+                               (GRID[r][c + 3] * GRID[r + 1][c + 2] * GRID[r + 2][c + 1] * GRID[r + 3][c]))
+
+            max_prod = max(max_dir, max_diag)
 
     return max_prod
 
