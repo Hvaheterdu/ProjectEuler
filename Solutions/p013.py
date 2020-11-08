@@ -225,9 +225,7 @@ def large_sum(numbers):
     Returns:
         str: first ten digit of the sum
     """
-    numbers = str.strip(numbers).split('\n')
-
-    numbers = [int(i) for i in numbers]
+    numbers = [int(i) for i in str.strip(numbers).split('\n')]
 
     return str(sum(numbers))[: 10]
 
