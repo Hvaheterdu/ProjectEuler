@@ -34,7 +34,7 @@ def pythagorean_triplet(n):
             # Count c down from 1000
             c = n - a - b
             if a * a + b * b == c * c:
-                return a*b*c
+                return a * b * c
 
 
 if __name__ == "__main__":
