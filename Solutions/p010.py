@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import eulerlib
+import sympy
 
 """
 Problem name: Summation of primes
@@ -14,7 +14,7 @@ def sum_of_primes(n):
     Returns:
         int: sum of all primes below n
     """
-    return sum(eulerlib.primes(n))
+    return sum(sympy.primerange(0, n))
 
 
 if __name__ == "__main__":
