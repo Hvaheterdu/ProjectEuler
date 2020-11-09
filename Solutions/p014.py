@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+import functools
 
 """
 Problem name: Longest Collatz sequence
 
 Problem ID:   14
 """
-import functools
 
 
 @functools.lru_cache(maxsize=None)
