@@ -7,15 +7,8 @@ Problem ID:   03
 """
 
 
-def largest_prime_factor(number):
-    """Find largest prime factor of parameter number
-
-    Args:
-        number (int): number to find largest factor from
-
-    Returns:
-        int: lagerst factor
-    """
+def largest_prime_factor(number) -> int:
+    """ Return largest prime factor of 'number' """
     factors = []
     i = 2
     while number != 1:

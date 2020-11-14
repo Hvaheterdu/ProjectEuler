@@ -30,15 +30,9 @@ def triangle_number(n, div_num):
             return i
 
 
-def divisor_function(n):
-    """Divisor function
-
-    Args:
-        n (int): maximum int size
-
-    Returns:
-        int: number of divisors for a given number
-    """
+def divisor_function(n) -> int:
+    """Divisor function. 
+    Return number of divisors for a given number 'n' """
     c = 2
     end = math.sqrt(n)
     for i in range(1, int(end)):

@@ -41,16 +41,8 @@ R = len(GRID[0])
 C = len(GRID)
 
 
-def largest_prod_in_grid(n):
-    """Find product of n adjacent neighbours in
-    2D matrix
-
-    Args:
-        n (int): path length
-
-    Returns:
-        int: product of n adjacent elements
-    """
+def largest_prod_in_grid(n) -> int:
+    """ Return product of 'n' adjacent neighbours in 2D matrix """
     max_dir = 0
     max_diag = 0
     max_prod = 0

@@ -10,16 +10,9 @@ Problem ID:   14
 
 
 @functools.lru_cache(maxsize=None)
-def collatz_sequence(n):
-    """Find longest collatz sequence
-    up to a number n
-
-    Args:
-        n (int): upper limit
-
-    Returns:
-        int: recursive path counter
-    """
+def collatz_sequence(n) -> int:
+    """Return longest collatz sequence
+    up to a number 'n' """
     if n == 1:
         return 1
     if n % 2 == 0:

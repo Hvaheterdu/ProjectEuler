@@ -9,7 +9,7 @@ Problem ID:   15
 """
 
 
-def lattice_paths(n, k):
+def lattice_paths(n, k) -> int:
     """Find how many lattice paths there are from
     (0, 0) to (n, k). Using formula from Wikipedia.
     See https://en.wikipedia.org/wiki/Lattice_path

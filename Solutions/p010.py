@@ -10,11 +10,7 @@ Problem ID:   10
 
 
 def sum_of_primes(n):
-    """Find sum of all prime numbers below n
-
-    Returns:
-        int: sum of all primes below n
-    """
+    """ Return sum of all prime numbers below 'n' """
     return sum(sympy.primerange(0, n))
 
 

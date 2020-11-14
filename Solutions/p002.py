@@ -8,15 +8,8 @@ Problem ID:   02
 """
 
 
-def fibonacci(n):
-    """Fibonacci sequence
-
-    Args:
-        n (int): the n'th fibonacci number
-
-    Returns:
-        int: the n'th fibonacci number
-    """
+def fibonacci(n) -> int:
+    """ Fibonacci sequence of 'n' numbers """
     if n == 1:
         return 0
     elif n == 2:
@@ -25,15 +18,8 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 
 
-def even_summation(n):
-    """Finds the sum of even fibonacci numbers
-
-    Args:
-        n (int): numbers to consider
-
-    Returns:
-        int: sum of even-valued fibonacci terms
-    """
+def even_summation(n) -> int:
+    """Return the sum of even fibonacci numbers up to 'n' """
     fib_num = 0
     res = 0
     i = 1

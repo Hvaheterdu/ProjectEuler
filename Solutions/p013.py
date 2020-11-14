@@ -111,16 +111,9 @@ NUMBERS = """
 """
 
 
-def large_sum(numbers):
+def large_sum(numbers) -> str:
     """Return the first ten digit of the sum for the
-    one-hundred 50-digit numbers NUMBERS.
-
-    Args:
-        numbers (list): one-hundred 50-digit numbers
-
-    Returns:
-        str: first ten digit of the sum
-    """
+    one-hundred 50-digit numbers NUMBERS """
     numbers = [int(i) for i in str.strip(numbers).split('\n')]
 
     return str(sum(numbers))[: 10]

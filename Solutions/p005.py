@@ -9,13 +9,9 @@ Problem ID:   05
 """
 
 
-def smallest_multiple():
-    """Find smallest multiple of 1 - 20 with 
-    numpy GCD and formula from LCM Wikipedia page
-
-    Returns:
-        int: smallest multiple
-    """
+def smallest_multiple() -> int:
+    """Return smallest multiple of 1 to 20 with numpy GCD.
+    See https://en.wikipedia.org/wiki/Least_common_multiple """
     total = 1
     for i in range(1, 21, 1):
         total *= i // gcd(i, total)

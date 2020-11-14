@@ -8,7 +8,7 @@ Problem ID:   16
 """
 
 
-def power_digit_sum(base, exp):
+def power_digit_sum(base, exp) -> int:
     """Get the sum of base^exp. Calculate the
     sum from the digits that makes the sum
     for the exponent
