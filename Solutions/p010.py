@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sympy
 
+
 """
 Problem name: Summation of primes
 

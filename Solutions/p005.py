@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from math import gcd
 
+
 """
 Problem name: Smallest multiple
 

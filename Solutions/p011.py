@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 """
 Problem name: Largest product in a grid
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from math import prod
 
+
 """
 Problem name: Largest product in a series
 

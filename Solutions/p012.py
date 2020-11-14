@@ -3,6 +3,7 @@ import math
 import itertools
 import sys
 
+
 """
 Problem name: Highly divisible triangular number
 
