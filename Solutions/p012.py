@@ -31,8 +31,8 @@ def triangle_number(n, div_num):
 
 
 def divisor_function(n) -> int:
-    """Divisor function. 
-    Return number of divisors for a given number 'n' """
+    """Divisor function. Return number of divisors
+    for a given number 'n' """
     c = 2
     end = math.sqrt(n)
     for i in range(1, int(end)):
