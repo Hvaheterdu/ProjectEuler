@@ -12,7 +12,7 @@ Problem ID:   19
 
 def counting_sundays():
     """Return sum of all sundays that are the first 
-    day in the month from 1901 to (and inclusive) 2000-09-30"""
+    day in the month from 1901 to (and inclusive) 2000-12-31"""
     res = 0
     for i in range(1901, 2001):
         for j in range(1, 13):
