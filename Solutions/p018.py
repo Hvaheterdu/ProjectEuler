@@ -25,13 +25,21 @@ TRIANGLE = [
     [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]
 ]
 
+"""
+    Reverse the 2D array and calculate each element on last row with
+    adjacent elements on the row above (row + 1). This will create a
+    new row that replaces the second to last row, were the elements
+    are the sum of the element from the last row and the largest adjacent
+    element from the row above. Last row is not discarded and the row above
+    is the new last row with the new elements. In the end we will only have 
+    one number remaining which is the sum of the largest numbers and the
+    largest adjacent number to it. Approach is also explained well on the web.
+    See https://stackoverflow.com/questions/8002252/euler-project-18-approach 
+"""
 
-def maximum_path_sum():
-    """Return the maximum sum of adjacent numbers in the row below.
-    This uses the bottom-up approach, where we calculate the maximum sum
-    of each adjacent element from the last row to the first row. The first
-    row will after these calculations contain the number which is the sum
-    of the largest adjacent numbers """
+
+def maximum_path_sum() -> int:
+    """Return the maximum sum of adjacent numbers in the row below """
     for i in reversed(range(len(TRIANGLE) - 1)):
         for j in range(len(TRIANGLE[i])):
             TRIANGLE[i][j] += max(TRIANGLE[i + 1][j], TRIANGLE[i + 1][j + 1])
