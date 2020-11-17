@@ -9,7 +9,7 @@ Problem ID:   20
 """
 
 
-def factorial_digit_sum(n):
+def factorial_digit_sum(n) -> int:
     """ Return sum of all digits in 'n!' """
     num = math.factorial(n)
     return sum(int(i) for i in str(num))
