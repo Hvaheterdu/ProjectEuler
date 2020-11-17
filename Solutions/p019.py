@@ -10,7 +10,7 @@ Problem ID:   19
 """
 
 
-def counting_sundays():
+def counting_sundays() -> int:
     """Return sum of all sundays that are the first 
     day in the month from 1901 to (and inclusive) 2000-12-31"""
     res = 0
