@@ -9,9 +9,6 @@ Problem ID:   17
 """
 
 
-IGNORED_CHAR = [' ', '-']
-
-
 def number_letter_counts(n) -> int:
     """Calculate sum of all letters when we convert
     all numbers from 1 to n written in words """
