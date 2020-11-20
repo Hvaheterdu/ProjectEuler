@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -17,4 +18,7 @@ def sum_square_difference() -> int:
 
 
 if __name__ == "__main__":
-    print(sum_square_difference())
+    start_time = timeit.default_timer()
+    ans = sum_square_difference()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

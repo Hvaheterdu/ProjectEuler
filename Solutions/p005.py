@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from math import gcd
+import timeit
 
 
 """
@@ -19,4 +20,7 @@ def smallest_multiple() -> int:
 
 
 if __name__ == "__main__":
-    print(smallest_multiple())
+    start_time = timeit.default_timer()
+    ans = smallest_multiple()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

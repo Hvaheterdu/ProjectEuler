@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -32,4 +33,7 @@ def even_summation(n) -> int:
 
 
 if __name__ == "__main__":
-    print(even_summation(4000000))
+    start_time = timeit.default_timer()
+    ans = even_summation(4000000)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

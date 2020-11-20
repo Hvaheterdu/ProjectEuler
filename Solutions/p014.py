@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import functools
+import timeit
 
 
 """
@@ -23,6 +24,8 @@ def collatz_sequence(n) -> int:
 
 
 if __name__ == "__main__":
-    # Use range and max() 'key' parameter
-    # to find biggest sequence
-    print(max(range(1, 1000000), key=collatz_sequence))
+    start_time = timeit.default_timer()
+    # Use range and max() 'key' parameter to find biggest sequence
+    ans = max(range(1, 1000000), key=collatz_sequence)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

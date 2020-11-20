@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from num2words import num2words
+import timeit
 
 
 """
@@ -20,4 +21,7 @@ def number_letter_counts(n) -> int:
 
 
 if __name__ == "__main__":
-    print(number_letter_counts(1000))
+    start_time = timeit.default_timer()
+    ans = number_letter_counts(1000)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

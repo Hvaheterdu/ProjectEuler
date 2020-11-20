@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from math import prod
+import timeit
 
 
 """
@@ -18,4 +19,7 @@ def largest_product_in_series() -> int:
 
 
 if __name__ == "__main__":
-    print(largest_product_in_series())
+    start_time = timeit.default_timer()
+    ans = largest_product_in_series()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,4 +1,5 @@
 # !/usr/bin/env python3
+import timeit
 
 
 """
@@ -6,6 +7,7 @@ Problem name: Maximum path sum I
 
 Problem ID:   18
 """
+
 
 TRIANGLE = [
     [75],
@@ -25,16 +27,17 @@ TRIANGLE = [
     [4, 62, 98, 27, 23, 9, 70, 98, 73, 93, 38, 53, 60, 4, 23]
 ]
 
+
 """
     Reverse the 2D array and calculate each element on last row with
     adjacent elements on the row above (row + 1). This will create a
     new row that replaces the second to last row, were the elements
     are the sum of the element from the last row and the largest adjacent
     element from the row above. Last row is not discarded and the row above
-    is the new last row with the new elements. In the end we will only have 
+    is the new last row with the new elements. In the end we will only have
     one number remaining which is the sum of the largest numbers and the
     largest adjacent number to it. Approach is also explained well on the web.
-    See https://stackoverflow.com/questions/8002252/euler-project-18-approach 
+    See https://stackoverflow.com/questions/8002252/euler-project-18-approach
 """
 
 
@@ -47,4 +50,7 @@ def maximum_path_sum() -> int:
 
 
 if __name__ == "__main__":
-    print(maximum_path_sum())
+    start_time = timeit.default_timer()
+    ans = maximum_path_sum()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

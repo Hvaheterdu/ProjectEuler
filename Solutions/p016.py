@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -24,4 +25,7 @@ def power_digit_sum(base, exp) -> int:
 
 
 if __name__ == "__main__":
-    print(power_digit_sum(2, 1000))
+    start_time = timeit.default_timer()
+    ans = power_digit_sum(2, 1000)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

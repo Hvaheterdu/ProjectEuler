@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import timeit
+
 
 """
 Problem name: Largest prime factor
@@ -21,4 +23,7 @@ def largest_prime_factor(number) -> int:
 
 
 if __name__ == "__main__":
-    print(largest_prime_factor(600851475143))
+    start_time = timeit.default_timer()
+    ans = largest_prime_factor(600851475143)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import math
 import itertools
+import timeit
+import math
 import sys
 
 
@@ -9,6 +10,7 @@ Problem name: Highly divisible triangular number
 
 Problem ID:   12
 """
+
 
 N = sys.maxsize
 
@@ -44,4 +46,7 @@ def divisor_function(n) -> int:
 
 
 if __name__ == "__main__":
-    print(triangle_number(N, 500))
+    start_time = timeit.default_timer()
+    ans = triangle_number(N, 500)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,4 +1,5 @@
 # !/usr/bin/env python3
+import timeit
 import math
 
 
@@ -16,4 +17,7 @@ def factorial_digit_sum(n) -> int:
 
 
 if __name__ == "__main__":
-    print(factorial_digit_sum(100))
+    start_time = timeit.default_timer()
+    ans = factorial_digit_sum(100)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,6 +1,6 @@
 # !/usr/bin/env python3
 import datetime
-from datetime import date
+import timeit
 
 
 """
@@ -21,4 +21,7 @@ def counting_sundays() -> int:
 
 
 if __name__ == "__main__":
-    print(counting_sundays())
+    start_time = timeit.default_timer()
+    ans = counting_sundays()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

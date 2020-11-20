@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import math
+import timeit
 
 
 """
@@ -24,4 +25,7 @@ def find_prime_num(n) -> int:
 
 
 if __name__ == "__main__":
-    print(find_prime_num(10001))
+    start_time = timeit.default_timer()
+    ans = find_prime_num(10001)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 import math
 
 
@@ -27,4 +28,7 @@ def lattice_paths(n, k) -> int:
 
 
 if __name__ == "__main__":
-    print(lattice_paths(40, 20))
+    start_time = timeit.default_timer()
+    ans = lattice_paths(40, 20)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

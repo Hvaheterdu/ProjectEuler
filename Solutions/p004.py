@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -16,4 +17,7 @@ def palindrome_num():
 
 
 if __name__ == "__main__":
-    print(palindrome_num())
+    start_time = timeit.default_timer()
+    ans = palindrome_num()
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

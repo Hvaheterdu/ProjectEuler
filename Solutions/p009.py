@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import math
+import timeit
 
 
 """
@@ -20,4 +20,7 @@ def pythagorean_triplet(n) -> None:
 
 
 if __name__ == "__main__":
-    print(pythagorean_triplet(1000))
+    start_time = timeit.default_timer()
+    ans = pythagorean_triplet(1000)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

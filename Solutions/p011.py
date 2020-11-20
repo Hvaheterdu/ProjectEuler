@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -6,6 +7,7 @@ Problem name: Largest product in a grid
 
 Problem ID:   11
 """
+
 
 GRID = [
     [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
@@ -64,4 +66,7 @@ def largest_prod_in_grid(n) -> int:
 
 
 if __name__ == "__main__":
-    print(largest_prod_in_grid(4))
+    start_time = timeit.default_timer()
+    ans = largest_prod_in_grid(4)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import timeit
 
 
 """
@@ -6,6 +7,7 @@ Problem name: Large sum
 
 Problem ID:   13
 """
+
 
 NUMBERS = """
 37107287533902102798797998220837590246510135740250
@@ -120,4 +122,7 @@ def large_sum(numbers) -> str:
 
 
 if __name__ == "__main__":
-    print(large_sum(NUMBERS))
+    start_time = timeit.default_timer()
+    ans = large_sum(NUMBERS)
+    total_time = timeit.default_timer() - start_time
+    print(f"Answer: {ans}\nExecution time: {total_time * 1000} ms")
