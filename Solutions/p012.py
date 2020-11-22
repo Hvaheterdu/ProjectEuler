@@ -28,11 +28,11 @@ def triangle_number(n, div_num):
     """
     tri_num = itertools.accumulate(range(1, n))
     for i in tri_num:
-        if divisor_function(i) > div_num:
+        if divisor(i) > div_num:
             return i
 
 
-def divisor_function(n) -> int:
+def divisor(n) -> int:
     """Divisor function. Return number of divisors
     for a given number 'n' """
     c = 2
