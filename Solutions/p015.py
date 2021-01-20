@@ -22,8 +22,8 @@ def lattice_paths(n, k) -> int:
     Returns:
         int: number of lattice paths
     """
-    # This is the binomial coefficient (n + k)
-    #                                  (  n  )
+    # This is the binomial coefficient (  n  )
+    #                                  (  k  )
     return math.comb(n, k)
 
 
