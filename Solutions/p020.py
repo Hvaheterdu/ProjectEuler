@@ -13,7 +13,8 @@ Problem ID:   20
 def factorial_digit_sum(n) -> int:
     """ Return sum of all digits in 'n!' """
     num = math.factorial(n)
-    return sum(int(i) for i in str(num))
+    res = sum(int(i) for i in str(num))
+    return res
 
 
 if __name__ == "__main__":

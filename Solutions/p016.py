@@ -21,7 +21,8 @@ def power_digit_sum(base, exp) -> int:
     Returns:
         int: sum of the digits
     """
-    return sum([int(i) for i in str(base**exp)])
+    res = sum([int(i) for i in str(base**exp)])
+    return res
 
 
 if __name__ == "__main__":
